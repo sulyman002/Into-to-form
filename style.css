@@ -292,6 +292,9 @@ button {
 }
 
 @media screen and (min-width: 764px) {
+    body{
+        height: 100vh;
+    }
     .container {
         display: flex;
         align-items: center;
