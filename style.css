@@ -192,19 +192,104 @@ button {
 
     .container {
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: 90%;
         flex-direction: column;
-        justify-content: space-between;
         gap: 25px;
+        margin-top: 100px;
     }
 
     .tittle h1 {
-    font-size: var(--fs-sm);
-    color: var(--neutral-white);
-    font-weight: bolder;
-    white-space: ;
-}
+        color: var(--neutral-white);
+        font-weight: bolder;
+        white-space: nowrap;
+    }
 
+    .tittle h1 span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--fs-xl);
+        color: var(--neutral-white);
+        font-weight: bolder;
+        white-space: nowrap;
+    }
+
+    .content {
+        color: var(--neutral-white);
+        font-size: var(--fs-md);
+        text-align: center;
+    }
+
+    .tittle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .form_container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 25px;
+    }
+
+    .reg_info {
+        font-size: var(--fs-md);
+        text-align: center;
+        display: block;
+    }
+
+    .form_container .reg_info .bold {
+        margin-right: 10px;
+        font-weight: bold;
+        white-space: wrap;
+        color: var(--neutral-white);
+    }
+
+    .thereafter {
+        font-size: var(--fs-md);
+        color: var(--neutral-white);
+        font-weight: 300;
+    }
+
+    .form form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+
+    }
+
+    .form form input {
+        height: 50px;
+        font-size: var(--fs-md);
+        font-weight: var(--fw-bold);
+    }
+
+    button {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form p {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .form p .bold_2 {
+        color: var(--pry-red);
+        font-weight: var(--fw-black);
+        margin-left: 5px;
+    }
 
 }
 
