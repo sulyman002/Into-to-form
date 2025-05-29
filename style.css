@@ -37,6 +37,7 @@ body {
 
     /* font sizes */
     --fs-xxl: clamp(3rem, 2.75vw, 4rem);
+    --fs-exl: clamp(2.25rem, 1.85vw, 2.5rem);
     --fs-xl: clamp(1.75rem, 1.75vw, 2rem);
     --fs-lg: clamp(1.25rem, 1.5vw, 1.5rem);
     --fs-xmd: clamp(1.1rem, 1.3vw, 1.3rem);
@@ -115,10 +116,7 @@ body {
     background-color: var(--neutral-white);
     border-radius: 10px;
     box-shadow: 1px 10px 2px 0px rgba(0, 0, 0, 0.3);
-    /* justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%; */
+
 }
 
 .form form {
@@ -158,7 +156,7 @@ button {
 
 .form p {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-content: center;
     font-size: 12px;
     font-weight: var(--fw-lighter);
@@ -181,7 +179,7 @@ button {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     body {
         background-image: url(/Assets/bg-intro-mobile.png);
         background-size: cover;
@@ -293,27 +291,75 @@ button {
 
 }
 
-/* @media screen and (max-width: 1024px) {
-    body{
-        background-image: url(/Assets/bg-intro-mobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+@media screen and (min-width: 764px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        gap: 20px;
     }
-    
-} */
 
-/* @media screen and (max-width: 1440px) {
-    body{
-        background-image: url(/Assets/bg-intro-mobile.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+    .tittle h1 span {
+        display: flex;
+        font-size: var(--fs-exl);
+        color: var(--neutral-white);
+        font-weight: bolder;
+        white-space: nowrap;
     }
-    
-    :root{
-        --fs-xxl: 2.5rem;
-        --fs-xl: 1.75rem;
-        --fs-lg: 1.25rem;
-        --fs-md: 1rem;
-        --fs-sm: 0.875rem;
+
+    .tittle h1 {
+        margin-bottom: 30px;
     }
-} */
+
+    .reg_info {
+        font-size: var(--fs-md);
+        display: block;
+        text-align: center;
+
+    }
+
+
+    .form form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+
+    }
+
+    .form form input {
+        height: 60px;
+    }
+
+    button {
+        height: 70px;
+    }
+
+    .form p {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+   body {
+    background-image: url(/Assets/bg-intro-desktop.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-color: var(--pry-red);
+    align-items: center;
+    justify-content: center;
+
+}
+}
