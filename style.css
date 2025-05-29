@@ -471,7 +471,7 @@ button {
     }
 
     .form p {
-        display: flex;
+        display: block;
         margin-bottom: 20px;
         justify-content: center;
         font-size: 12px;
