@@ -28,22 +28,26 @@
             <div class="form">
                 <form action="" id="learn_form">
                     <div class="group_form" id="firstName">
-                        <input type="text" id="firstname_input" placeholder="First Name" required>
+                        <input type="text" id="firstname_input" placeholder="First Name">
+                        <img src="/Assets/icon-error.svg" class="icon_error" alt="error">
                         <div class="error_message">First Name cannot be empty</div>
                     </div>
 
                     <div class="group_form" id="lastName">
-                        <input type="text" id="lastname_input" placeholder="Last Name" required>
+                        <input type="text" id="lastname_input" placeholder="Last Name">
+                        <img src="/Assets/icon-error.svg" class="icon_error" id="icon_error" alt="error">
                         <div class="error_message">Last Name cannot be empty</div>
                     </div>
 
                     <div class="group_form" id="emailFormat">
-                        <input type="email" id="email_input" placeholder="Email Address" required>
+                        <input type="email" id="email_input" placeholder="Email Address">
+                        <img src="/Assets/icon-error.svg" class="icon_error" alt="error">
                         <div class="error_message">Looks like this is not an email</div>
                     </div>
 
                     <div class="group_form" id="passwordFormat">
-                        <input type="password" id="password_input" placeholder="Password" required>
+                        <input type="password" id="password_input" placeholder="Password">
+                        <img src="/Assets/icon-error.svg" class="icon_error" alt="error">
                         <div class="error_message">Password cannot be empty</div>
                     </div>
                     <button type="submit">CLAIM YOUR FREE TRIAL</button>
